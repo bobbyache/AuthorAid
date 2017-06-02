@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterUI", "CharacterUI\CharacterUI\CharacterUI.csproj", "{889994D2-F184-41E7-89D4-440E938A04FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterDomain", "CharacterDomain\CharacterDomain.csproj", "{59F74316-D87D-40BE-B67A-F2839651A84A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterTests", "CharacterTests\CharacterTests.csproj", "{C1F48F50-0316-4E0D-8CBA-11DBC10D3DE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{66D90FD2-5314-479A-ADBB-3C598DD98F3D}"
+	ProjectSection(SolutionItems) = preProject
+		CharacterMVVM.vsmdi = CharacterMVVM.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CharacterMVVM.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{889994D2-F184-41E7-89D4-440E938A04FA}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{889994D2-F184-41E7-89D4-440E938A04FA}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{889994D2-F184-41E7-89D4-440E938A04FA}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{889994D2-F184-41E7-89D4-440E938A04FA}.Debug|x86.ActiveCfg = Debug|x86
+		{889994D2-F184-41E7-89D4-440E938A04FA}.Debug|x86.Build.0 = Debug|x86
+		{889994D2-F184-41E7-89D4-440E938A04FA}.Release|Any CPU.ActiveCfg = Release|x86
+		{889994D2-F184-41E7-89D4-440E938A04FA}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{889994D2-F184-41E7-89D4-440E938A04FA}.Release|Mixed Platforms.Build.0 = Release|x86
+		{889994D2-F184-41E7-89D4-440E938A04FA}.Release|x86.ActiveCfg = Release|x86
+		{889994D2-F184-41E7-89D4-440E938A04FA}.Release|x86.Build.0 = Release|x86
+		{59F74316-D87D-40BE-B67A-F2839651A84A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F74316-D87D-40BE-B67A-F2839651A84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F74316-D87D-40BE-B67A-F2839651A84A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{59F74316-D87D-40BE-B67A-F2839651A84A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{59F74316-D87D-40BE-B67A-F2839651A84A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{59F74316-D87D-40BE-B67A-F2839651A84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F74316-D87D-40BE-B67A-F2839651A84A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59F74316-D87D-40BE-B67A-F2839651A84A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{59F74316-D87D-40BE-B67A-F2839651A84A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{59F74316-D87D-40BE-B67A-F2839651A84A}.Release|x86.ActiveCfg = Release|Any CPU
+		{C1F48F50-0316-4E0D-8CBA-11DBC10D3DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F48F50-0316-4E0D-8CBA-11DBC10D3DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F48F50-0316-4E0D-8CBA-11DBC10D3DE9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C1F48F50-0316-4E0D-8CBA-11DBC10D3DE9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C1F48F50-0316-4E0D-8CBA-11DBC10D3DE9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C1F48F50-0316-4E0D-8CBA-11DBC10D3DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F48F50-0316-4E0D-8CBA-11DBC10D3DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F48F50-0316-4E0D-8CBA-11DBC10D3DE9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C1F48F50-0316-4E0D-8CBA-11DBC10D3DE9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C1F48F50-0316-4E0D-8CBA-11DBC10D3DE9}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

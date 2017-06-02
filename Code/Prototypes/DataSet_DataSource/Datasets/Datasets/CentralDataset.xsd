@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CentralDataset" targetNamespace="http://tempuri.org/CentralDataset.xsd" xmlns:mstns="http://tempuri.org/CentralDataset.xsd" xmlns="http://tempuri.org/CentralDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CentralDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CentralDataset" msprop:Generator_UserDSName="CentralDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Character" msprop:Generator_TableClassName="CharacterDataTable" msprop:Generator_TableVarName="tableCharacter" msprop:Generator_TablePropName="Character" msprop:Generator_RowDeletingName="CharacterRowDeleting" msprop:Generator_UserTableName="Character" msprop:Generator_RowChangingName="CharacterRowChanging" msprop:Generator_RowEvHandlerName="CharacterRowChangeEventHandler" msprop:Generator_RowDeletedName="CharacterRowDeleted" msprop:Generator_RowEvArgName="CharacterRowChangeEvent" msprop:Generator_RowChangedName="CharacterRowChanged" msprop:Generator_RowClassName="CharacterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CharacterCode" msprop:Generator_ColumnVarNameInTable="columnCharacterCode" msprop:Generator_ColumnPropNameInRow="CharacterCode" msprop:Generator_ColumnPropNameInTable="CharacterCodeColumn" msprop:Generator_UserColumnName="CharacterCode" type="xs:string" />
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName" type="xs:string" minOccurs="0" />
+              <xs:element name="Aliases" msprop:Generator_ColumnVarNameInTable="columnAliases" msprop:Generator_ColumnPropNameInRow="Aliases" msprop:Generator_ColumnPropNameInTable="AliasesColumn" msprop:Generator_UserColumnName="Aliases" type="xs:string" minOccurs="0" />
+              <xs:element name="Sex" msprop:Generator_ColumnVarNameInTable="columnSex" msprop:Generator_ColumnPropNameInRow="Sex" msprop:Generator_ColumnPropNameInTable="SexColumn" msprop:Generator_UserColumnName="Sex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BirthDate" msprop:Generator_ColumnVarNameInTable="columnBirthDate" msprop:Generator_ColumnPropNameInRow="BirthDate" msprop:Generator_ColumnPropNameInTable="BirthDateColumn" msprop:Generator_UserColumnName="BirthDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DeathDate" msprop:Generator_ColumnVarNameInTable="columnDeathDate" msprop:Generator_ColumnPropNameInRow="DeathDate" msprop:Generator_ColumnPropNameInTable="DeathDateColumn" msprop:Generator_UserColumnName="DeathDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Scene" msprop:Generator_TableClassName="SceneDataTable" msprop:Generator_TableVarName="tableScene" msprop:Generator_TablePropName="Scene" msprop:Generator_RowDeletingName="SceneRowDeleting" msprop:Generator_UserTableName="Scene" msprop:Generator_RowChangingName="SceneRowChanging" msprop:Generator_RowEvHandlerName="SceneRowChangeEventHandler" msprop:Generator_RowDeletedName="SceneRowDeleted" msprop:Generator_RowEvArgName="SceneRowChangeEvent" msprop:Generator_RowChangedName="SceneRowChanged" msprop:Generator_RowClassName="SceneRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SceneCode" msprop:Generator_ColumnVarNameInTable="columnSceneCode" msprop:Generator_ColumnPropNameInRow="SceneCode" msprop:Generator_ColumnPropNameInTable="SceneCodeColumn" msprop:Generator_UserColumnName="SceneCode" type="xs:string" />
+              <xs:element name="SceneOrdinal" msprop:Generator_ColumnVarNameInTable="columnSceneOrdinal" msprop:Generator_ColumnPropNameInRow="SceneOrdinal" msprop:Generator_ColumnPropNameInTable="SceneOrdinalColumn" msprop:Generator_UserColumnName="SceneOrdinal" type="xs:int" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" type="xs:string" minOccurs="0" />
+              <xs:element name="PercentComplete" msprop:Generator_ColumnVarNameInTable="columnPercentComplete" msprop:Generator_ColumnPropNameInRow="PercentComplete" msprop:Generator_ColumnPropNameInTable="PercentCompleteColumn" msprop:Generator_UserColumnName="PercentComplete" type="xs:int" minOccurs="0" />
+              <xs:element name="Summary" msprop:Generator_ColumnVarNameInTable="columnSummary" msprop:Generator_ColumnPropNameInRow="Summary" msprop:Generator_ColumnPropNameInTable="SummaryColumn" msprop:Generator_UserColumnName="Summary" type="xs:string" minOccurs="0" />
+              <xs:element name="DateCreated" msprop:Generator_ColumnVarNameInTable="columnDateCreated" msprop:Generator_ColumnPropNameInRow="DateCreated" msprop:Generator_ColumnPropNameInTable="DateCreatedColumn" msprop:Generator_UserColumnName="DateCreated" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateModified" msprop:Generator_ColumnVarNameInTable="columnDateModified" msprop:Generator_ColumnPropNameInRow="DateModified" msprop:Generator_ColumnPropNameInTable="DateModifiedColumn" msprop:Generator_UserColumnName="DateModified" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SceneVersion" msprop:Generator_TableClassName="SceneVersionDataTable" msprop:Generator_TableVarName="tableSceneVersion" msprop:Generator_TablePropName="SceneVersion" msprop:Generator_RowDeletingName="SceneVersionRowDeleting" msprop:Generator_UserTableName="SceneVersion" msprop:Generator_RowChangingName="SceneVersionRowChanging" msprop:Generator_RowEvHandlerName="SceneVersionRowChangeEventHandler" msprop:Generator_RowDeletedName="SceneVersionRowDeleted" msprop:Generator_RowEvArgName="SceneVersionRowChangeEvent" msprop:Generator_RowChangedName="SceneVersionRowChanged" msprop:Generator_RowClassName="SceneVersionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SceneVersionCode" msprop:Generator_ColumnVarNameInTable="columnSceneVersionCode" msprop:Generator_ColumnPropNameInRow="SceneVersionCode" msprop:Generator_ColumnPropNameInTable="SceneVersionCodeColumn" msprop:Generator_UserColumnName="SceneVersionCode" type="xs:string" />
+              <xs:element name="SceneCode" msprop:Generator_ColumnVarNameInTable="columnSceneCode" msprop:Generator_ColumnPropNameInRow="SceneCode" msprop:Generator_ColumnPropNameInTable="SceneCodeColumn" msprop:Generator_UserColumnName="SceneCode" type="xs:string" />
+              <xs:element name="VersionOrdinal" msprop:Generator_ColumnVarNameInTable="columnVersionOrdinal" msprop:Generator_ColumnPropNameInRow="VersionOrdinal" msprop:Generator_ColumnPropNameInTable="VersionOrdinalColumn" msprop:Generator_UserColumnName="VersionOrdinal" type="xs:int" />
+              <xs:element name="FilePath" msprop:Generator_ColumnVarNameInTable="columnFilePath" msprop:Generator_ColumnPropNameInRow="FilePath" msprop:Generator_ColumnPropNameInTable="FilePathColumn" msprop:Generator_UserColumnName="FilePath" type="xs:string" minOccurs="0" />
+              <xs:element name="DateCreated" msprop:Generator_ColumnVarNameInTable="columnDateCreated" msprop:Generator_ColumnPropNameInRow="DateCreated" msprop:Generator_ColumnPropNameInTable="DateCreatedColumn" msprop:Generator_UserColumnName="DateCreated" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateModified" msprop:Generator_ColumnVarNameInTable="columnDateModified" msprop:Generator_ColumnPropNameInRow="DateModified" msprop:Generator_ColumnPropNameInTable="DateModifiedColumn" msprop:Generator_UserColumnName="DateModified" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Storyline" msprop:Generator_TableClassName="StorylineDataTable" msprop:Generator_TableVarName="tableStoryline" msprop:Generator_TablePropName="Storyline" msprop:Generator_RowDeletingName="StorylineRowDeleting" msprop:Generator_UserTableName="Storyline" msprop:Generator_RowChangingName="StorylineRowChanging" msprop:Generator_RowEvHandlerName="StorylineRowChangeEventHandler" msprop:Generator_RowDeletedName="StorylineRowDeleted" msprop:Generator_RowEvArgName="StorylineRowChangeEvent" msprop:Generator_RowChangedName="StorylineRowChanged" msprop:Generator_RowClassName="StorylineRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StorylineCode" msprop:Generator_ColumnVarNameInTable="columnStorylineCode" msprop:Generator_ColumnPropNameInRow="StorylineCode" msprop:Generator_ColumnPropNameInTable="StorylineCodeColumn" msprop:Generator_UserColumnName="StorylineCode" type="xs:string" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StorylineScene" msprop:Generator_TableClassName="StorylineSceneDataTable" msprop:Generator_TableVarName="tableStorylineScene" msprop:Generator_TablePropName="StorylineScene" msprop:Generator_RowDeletingName="StorylineSceneRowDeleting" msprop:Generator_UserTableName="StorylineScene" msprop:Generator_RowChangingName="StorylineSceneRowChanging" msprop:Generator_RowEvHandlerName="StorylineSceneRowChangeEventHandler" msprop:Generator_RowDeletedName="StorylineSceneRowDeleted" msprop:Generator_RowEvArgName="StorylineSceneRowChangeEvent" msprop:Generator_RowChangedName="StorylineSceneRowChanged" msprop:Generator_RowClassName="StorylineSceneRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StorylineCode" msprop:Generator_ColumnVarNameInTable="columnStorylineCode" msprop:Generator_ColumnPropNameInRow="StorylineCode" msprop:Generator_ColumnPropNameInTable="StorylineCodeColumn" msprop:Generator_UserColumnName="StorylineCode" type="xs:string" />
+              <xs:element name="SceneCode" msprop:Generator_ColumnVarNameInTable="columnSceneCode" msprop:Generator_ColumnPropNameInRow="SceneCode" msprop:Generator_ColumnPropNameInTable="SceneCodeColumn" msprop:Generator_UserColumnName="SceneCode" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SceneCharacter" msprop:Generator_TableClassName="SceneCharacterDataTable" msprop:Generator_TableVarName="tableSceneCharacter" msprop:Generator_TablePropName="SceneCharacter" msprop:Generator_RowDeletingName="SceneCharacterRowDeleting" msprop:Generator_UserTableName="SceneCharacter" msprop:Generator_RowChangingName="SceneCharacterRowChanging" msprop:Generator_RowEvHandlerName="SceneCharacterRowChangeEventHandler" msprop:Generator_RowDeletedName="SceneCharacterRowDeleted" msprop:Generator_RowEvArgName="SceneCharacterRowChangeEvent" msprop:Generator_RowChangedName="SceneCharacterRowChanged" msprop:Generator_RowClassName="SceneCharacterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SceneCode" msprop:Generator_ColumnVarNameInTable="columnSceneCode" msprop:Generator_ColumnPropNameInRow="SceneCode" msprop:Generator_ColumnPropNameInTable="SceneCodeColumn" msprop:Generator_UserColumnName="SceneCode" type="xs:string" minOccurs="0" />
+              <xs:element name="CharacterCode" msprop:Generator_ColumnVarNameInTable="columnCharacterCode" msprop:Generator_ColumnPropNameInRow="CharacterCode" msprop:Generator_ColumnPropNameInTable="CharacterCodeColumn" msprop:Generator_UserColumnName="CharacterCode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Role" msprop:Generator_TableClassName="RoleDataTable" msprop:Generator_TableVarName="tableRole" msprop:Generator_TablePropName="Role" msprop:Generator_RowDeletingName="RoleRowDeleting" msprop:Generator_UserTableName="Role" msprop:Generator_RowChangingName="RoleRowChanging" msprop:Generator_RowEvHandlerName="RoleRowChangeEventHandler" msprop:Generator_RowDeletedName="RoleRowDeleted" msprop:Generator_RowEvArgName="RoleRowChangeEvent" msprop:Generator_RowChangedName="RoleRowChanged" msprop:Generator_RowClassName="RoleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoleCode" msprop:Generator_ColumnVarNameInTable="columnRoleCode" msprop:Generator_ColumnPropNameInRow="RoleCode" msprop:Generator_ColumnPropNameInTable="RoleCodeColumn" msprop:Generator_UserColumnName="RoleCode" type="xs:string" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CharacterRole" msprop:Generator_TableClassName="CharacterRoleDataTable" msprop:Generator_TableVarName="tableCharacterRole" msprop:Generator_TablePropName="CharacterRole" msprop:Generator_RowDeletingName="CharacterRoleRowDeleting" msprop:Generator_UserTableName="CharacterRole" msprop:Generator_RowChangingName="CharacterRoleRowChanging" msprop:Generator_RowEvHandlerName="CharacterRoleRowChangeEventHandler" msprop:Generator_RowDeletedName="CharacterRoleRowDeleted" msprop:Generator_RowEvArgName="CharacterRoleRowChangeEvent" msprop:Generator_RowChangedName="CharacterRoleRowChanged" msprop:Generator_RowClassName="CharacterRoleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CharacterCode" msprop:Generator_ColumnVarNameInTable="columnCharacterCode" msprop:Generator_ColumnPropNameInRow="CharacterCode" msprop:Generator_ColumnPropNameInTable="CharacterCodeColumn" msprop:Generator_UserColumnName="CharacterCode" type="xs:string" />
+              <xs:element name="RoleCode" msprop:Generator_ColumnVarNameInTable="columnRoleCode" msprop:Generator_ColumnPropNameInRow="RoleCode" msprop:Generator_ColumnPropNameInTable="RoleCodeColumn" msprop:Generator_UserColumnName="RoleCode" type="xs:string" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Topic" msprop:Generator_TableClassName="TopicDataTable" msprop:Generator_TableVarName="tableTopic" msprop:Generator_TablePropName="Topic" msprop:Generator_RowDeletingName="TopicRowDeleting" msprop:Generator_UserTableName="Topic" msprop:Generator_RowChangingName="TopicRowChanging" msprop:Generator_RowEvHandlerName="TopicRowChangeEventHandler" msprop:Generator_RowDeletedName="TopicRowDeleted" msprop:Generator_RowEvArgName="TopicRowChangeEvent" msprop:Generator_RowChangedName="TopicRowChanged" msprop:Generator_RowClassName="TopicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" />
+              <xs:element name="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" msprop:Generator_UserColumnName="Caption" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Url" msprop:Generator_TableClassName="UrlDataTable" msprop:Generator_TableVarName="tableUrl" msprop:Generator_TablePropName="Url" msprop:Generator_RowDeletingName="UrlRowDeleting" msprop:Generator_UserTableName="Url" msprop:Generator_RowChangingName="UrlRowChanging" msprop:Generator_RowEvHandlerName="UrlRowChangeEventHandler" msprop:Generator_RowDeletedName="UrlRowDeleted" msprop:Generator_RowEvArgName="UrlRowChangeEvent" msprop:Generator_RowChangedName="UrlRowChanged" msprop:Generator_RowClassName="UrlRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" />
+              <xs:element name="TopicCode" msprop:Generator_ColumnVarNameInTable="columnTopicCode" msprop:Generator_ColumnPropNameInRow="TopicCode" msprop:Generator_ColumnPropNameInTable="TopicCodeColumn" msprop:Generator_UserColumnName="TopicCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Url" msprop:Generator_ColumnVarNameInTable="columnUrl" msprop:Generator_ColumnPropNameInRow="Url" msprop:Generator_ColumnPropNameInTable="UrlColumn" msprop:Generator_UserColumnName="Url" type="xs:string" minOccurs="0" />
+              <xs:element name="DateCreated" msprop:Generator_ColumnVarNameInTable="columnDateCreated" msprop:Generator_ColumnPropNameInRow="DateCreated" msprop:Generator_ColumnPropNameInTable="DateCreatedColumn" msprop:Generator_UserColumnName="DateCreated" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Image" msprop:Generator_TableClassName="ImageDataTable" msprop:Generator_TableVarName="tableImage" msprop:Generator_TablePropName="Image" msprop:Generator_RowDeletingName="ImageRowDeleting" msprop:Generator_UserTableName="Image" msprop:Generator_RowChangingName="ImageRowChanging" msprop:Generator_RowEvHandlerName="ImageRowChangeEventHandler" msprop:Generator_RowDeletedName="ImageRowDeleted" msprop:Generator_RowEvArgName="ImageRowChangeEvent" msprop:Generator_RowChangedName="ImageRowChanged" msprop:Generator_RowClassName="ImageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" />
+              <xs:element name="TopicCode" msprop:Generator_ColumnVarNameInTable="columnTopicCode" msprop:Generator_ColumnPropNameInRow="TopicCode" msprop:Generator_ColumnPropNameInTable="TopicCodeColumn" msprop:Generator_UserColumnName="TopicCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" msprop:Generator_UserColumnName="Caption" type="xs:string" minOccurs="0" />
+              <xs:element name="ImageFile" msprop:Generator_ColumnVarNameInTable="columnImageFile" msprop:Generator_ColumnPropNameInRow="ImageFile" msprop:Generator_ColumnPropNameInTable="ImageFileColumn" msprop:Generator_UserColumnName="ImageFile" type="xs:string" minOccurs="0" />
+              <xs:element name="DateCreated" msprop:Generator_ColumnVarNameInTable="columnDateCreated" msprop:Generator_ColumnPropNameInRow="DateCreated" msprop:Generator_ColumnPropNameInTable="DateCreatedColumn" msprop:Generator_UserColumnName="DateCreated" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Attachment" msprop:Generator_TableClassName="AttachmentDataTable" msprop:Generator_TableVarName="tableAttachment" msprop:Generator_TablePropName="Attachment" msprop:Generator_RowDeletingName="AttachmentRowDeleting" msprop:Generator_UserTableName="Attachment" msprop:Generator_RowChangingName="AttachmentRowChanging" msprop:Generator_RowEvHandlerName="AttachmentRowChangeEventHandler" msprop:Generator_RowDeletedName="AttachmentRowDeleted" msprop:Generator_RowEvArgName="AttachmentRowChangeEvent" msprop:Generator_RowChangedName="AttachmentRowChanged" msprop:Generator_RowClassName="AttachmentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="TopicCode" msprop:Generator_ColumnVarNameInTable="columnTopicCode" msprop:Generator_ColumnPropNameInRow="TopicCode" msprop:Generator_ColumnPropNameInTable="TopicCodeColumn" msprop:Generator_UserColumnName="TopicCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" msprop:Generator_UserColumnName="Caption" type="xs:string" minOccurs="0" />
+              <xs:element name="AttachmentFile" msprop:Generator_ColumnVarNameInTable="columnAttachmentFile" msprop:Generator_ColumnPropNameInRow="AttachmentFile" msprop:Generator_ColumnPropNameInTable="AttachmentFileColumn" msprop:Generator_UserColumnName="AttachmentFile" type="xs:string" minOccurs="0" />
+              <xs:element name="DateCreated" msprop:Generator_ColumnVarNameInTable="columnDateCreated" msprop:Generator_ColumnPropNameInRow="DateCreated" msprop:Generator_ColumnPropNameInTable="DateCreatedColumn" msprop:Generator_UserColumnName="DateCreated" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CharacterGroupRelationship" msprop:Generator_TableClassName="CharacterGroupRelationshipDataTable" msprop:Generator_TableVarName="tableCharacterGroupRelationship" msprop:Generator_TablePropName="CharacterGroupRelationship" msprop:Generator_RowDeletingName="CharacterGroupRelationshipRowDeleting" msprop:Generator_UserTableName="CharacterGroupRelationship" msprop:Generator_RowChangingName="CharacterGroupRelationshipRowChanging" msprop:Generator_RowEvHandlerName="CharacterGroupRelationshipRowChangeEventHandler" msprop:Generator_RowDeletedName="CharacterGroupRelationshipRowDeleted" msprop:Generator_RowEvArgName="CharacterGroupRelationshipRowChangeEvent" msprop:Generator_RowChangedName="CharacterGroupRelationshipRowChanged" msprop:Generator_RowClassName="CharacterGroupRelationshipRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CharacterCode" msprop:Generator_ColumnVarNameInTable="columnCharacterCode" msprop:Generator_ColumnPropNameInRow="CharacterCode" msprop:Generator_ColumnPropNameInTable="CharacterCodeColumn" msprop:Generator_UserColumnName="CharacterCode" type="xs:string" />
+              <xs:element name="GroupRelationshipCode" msprop:Generator_ColumnVarNameInTable="columnGroupRelationshipCode" msprop:Generator_ColumnPropNameInRow="GroupRelationshipCode" msprop:Generator_ColumnPropNameInTable="GroupRelationshipCodeColumn" msprop:Generator_UserColumnName="GroupRelationshipCode" type="xs:string" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GroupRelationship" msprop:Generator_TableClassName="GroupRelationshipDataTable" msprop:Generator_TableVarName="tableGroupRelationship" msprop:Generator_TablePropName="GroupRelationship" msprop:Generator_RowDeletingName="GroupRelationshipRowDeleting" msprop:Generator_UserTableName="GroupRelationship" msprop:Generator_RowChangingName="GroupRelationshipRowChanging" msprop:Generator_RowEvHandlerName="GroupRelationshipRowChangeEventHandler" msprop:Generator_RowDeletedName="GroupRelationshipRowDeleted" msprop:Generator_RowEvArgName="GroupRelationshipRowChangeEvent" msprop:Generator_RowChangedName="GroupRelationshipRowChanged" msprop:Generator_RowClassName="GroupRelationshipRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GroupRelationshipCode" msprop:Generator_ColumnVarNameInTable="columnGroupRelationshipCode" msprop:Generator_ColumnPropNameInRow="GroupRelationshipCode" msprop:Generator_ColumnPropNameInTable="GroupRelationshipCodeColumn" msprop:Generator_UserColumnName="GroupRelationshipCode" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CharacterSex" msprop:Generator_TableClassName="CharacterSexDataTable" msprop:Generator_TableVarName="tableCharacterSex" msprop:Generator_TablePropName="CharacterSex" msprop:Generator_RowDeletingName="CharacterSexRowDeleting" msprop:Generator_UserTableName="CharacterSex" msprop:Generator_RowChangingName="CharacterSexRowChanging" msprop:Generator_RowEvHandlerName="CharacterSexRowChangeEventHandler" msprop:Generator_RowDeletedName="CharacterSexRowDeleted" msprop:Generator_RowEvArgName="CharacterSexRowChangeEvent" msprop:Generator_RowChangedName="CharacterSexRowChanged" msprop:Generator_RowClassName="CharacterSexRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CharacterSexCode" msprop:Generator_ColumnVarNameInTable="columnCharacterSexCode" msprop:Generator_ColumnPropNameInRow="CharacterSexCode" msprop:Generator_ColumnPropNameInTable="CharacterSexCodeColumn" msprop:Generator_UserColumnName="CharacterSexCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Character" />
+      <xs:field xpath="mstns:CharacterCode" />
+    </xs:unique>
+    <xs:unique name="Scene_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Scene" />
+      <xs:field xpath="mstns:SceneCode" />
+    </xs:unique>
+    <xs:unique name="SceneVersion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SceneVersion" />
+      <xs:field xpath="mstns:SceneVersionCode" />
+    </xs:unique>
+    <xs:unique name="Storyline_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Storyline" />
+      <xs:field xpath="mstns:StorylineCode" />
+    </xs:unique>
+    <xs:unique name="StorylineScene_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StorylineScene" />
+      <xs:field xpath="mstns:StorylineCode" />
+      <xs:field xpath="mstns:SceneCode" />
+    </xs:unique>
+    <xs:unique name="Role_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Role" />
+      <xs:field xpath="mstns:RoleCode" />
+    </xs:unique>
+    <xs:unique name="CharacterRole_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CharacterRole" />
+      <xs:field xpath="mstns:CharacterCode" />
+      <xs:field xpath="mstns:RoleCode" />
+    </xs:unique>
+    <xs:unique name="Topic_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Topic" />
+      <xs:field xpath="mstns:Code" />
+    </xs:unique>
+    <xs:unique name="Url_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Url" />
+      <xs:field xpath="mstns:Code" />
+    </xs:unique>
+    <xs:unique name="Image_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Image" />
+      <xs:field xpath="mstns:Code" />
+    </xs:unique>
+    <xs:unique name="CharacterGroupRelationship_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CharacterGroupRelationship" />
+      <xs:field xpath="mstns:CharacterCode" />
+      <xs:field xpath="mstns:GroupRelationshipCode" />
+    </xs:unique>
+    <xs:unique name="GroupRelationship_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GroupRelationship" />
+      <xs:field xpath="mstns:GroupRelationshipCode" />
+    </xs:unique>
+    <xs:unique name="CharacterSex_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CharacterSex" />
+      <xs:field xpath="mstns:CharacterSexCode" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Character_SceneCharacter" msdata:parent="Character" msdata:child="SceneCharacter" msdata:parentkey="CharacterCode" msdata:childkey="CharacterCode" msprop:Generator_UserChildTable="SceneCharacter" msprop:Generator_ChildPropName="GetSceneCharacterRows" msprop:Generator_ParentPropName="CharacterRow" msprop:Generator_UserRelationName="Character_SceneCharacter" msprop:Generator_RelationVarName="relationCharacter_SceneCharacter" msprop:Generator_UserParentTable="Character" />
+      <msdata:Relationship name="Character_CharacterRole" msdata:parent="Character" msdata:child="CharacterRole" msdata:parentkey="CharacterCode" msdata:childkey="CharacterCode" msprop:Generator_UserChildTable="CharacterRole" msprop:Generator_ChildPropName="GetCharacterRoleRows" msprop:Generator_ParentPropName="CharacterRow" msprop:Generator_UserRelationName="Character_CharacterRole" msprop:Generator_RelationVarName="relationCharacter_CharacterRole" msprop:Generator_UserParentTable="Character" />
+      <msdata:Relationship name="Role_CharacterRole" msdata:parent="Role" msdata:child="CharacterRole" msdata:parentkey="RoleCode" msdata:childkey="RoleCode" msprop:Generator_UserChildTable="CharacterRole" msprop:Generator_ChildPropName="GetCharacterRoleRows" msprop:Generator_ParentPropName="RoleRow" msprop:Generator_UserRelationName="Role_CharacterRole" msprop:Generator_RelationVarName="relationRole_CharacterRole" msprop:Generator_UserParentTable="Role" />
+      <msdata:Relationship name="Topic_TopicUrl" msdata:parent="Topic" msdata:child="Url" msdata:parentkey="Code" msdata:childkey="TopicCode" msprop:Generator_UserChildTable="Url" msprop:Generator_ChildPropName="GetUrlRows" msprop:Generator_ParentPropName="TopicRow" msprop:Generator_UserRelationName="Topic_TopicUrl" msprop:Generator_RelationVarName="relationTopic_TopicUrl" msprop:Generator_UserParentTable="Topic" />
+      <msdata:Relationship name="Topic_TopicImage" msdata:parent="Topic" msdata:child="Image" msdata:parentkey="Code" msdata:childkey="TopicCode" msprop:Generator_UserChildTable="Image" msprop:Generator_ChildPropName="GetImageRows" msprop:Generator_ParentPropName="TopicRow" msprop:Generator_UserRelationName="Topic_TopicImage" msprop:Generator_RelationVarName="relationTopic_TopicImage" msprop:Generator_UserParentTable="Topic" />
+      <msdata:Relationship name="Topic_TopicAttachment" msdata:parent="Topic" msdata:child="Attachment" msdata:parentkey="Code" msdata:childkey="TopicCode" msprop:Generator_UserChildTable="Attachment" msprop:Generator_ChildPropName="GetAttachmentRows" msprop:Generator_ParentPropName="TopicRow" msprop:Generator_UserRelationName="Topic_TopicAttachment" msprop:Generator_RelationVarName="relationTopic_TopicAttachment" msprop:Generator_UserParentTable="Topic" />
+      <msdata:Relationship name="Character_CharacterGroupRelationship" msdata:parent="Character" msdata:child="CharacterGroupRelationship" msdata:parentkey="CharacterCode" msdata:childkey="CharacterCode" msprop:Generator_UserChildTable="CharacterGroupRelationship" msprop:Generator_ChildPropName="GetCharacterGroupRelationshipRows" msprop:Generator_ParentPropName="CharacterRow" msprop:Generator_UserRelationName="Character_CharacterGroupRelationship" msprop:Generator_RelationVarName="relationCharacter_CharacterGroupRelationship" msprop:Generator_UserParentTable="Character" />
+      <msdata:Relationship name="GroupRelationship_CharacterGroupRelationship" msdata:parent="GroupRelationship" msdata:child="CharacterGroupRelationship" msdata:parentkey="GroupRelationshipCode" msdata:childkey="GroupRelationshipCode" msprop:Generator_UserChildTable="CharacterGroupRelationship" msprop:Generator_ChildPropName="GetCharacterGroupRelationshipRows" msprop:Generator_ParentPropName="GroupRelationshipRow" msprop:Generator_UserRelationName="GroupRelationship_CharacterGroupRelationship" msprop:Generator_RelationVarName="relationGroupRelationship_CharacterGroupRelationship" msprop:Generator_UserParentTable="GroupRelationship" />
+      <msdata:Relationship name="Scene_SceneCharacter" msdata:parent="Scene" msdata:child="SceneCharacter" msdata:parentkey="SceneCode" msdata:childkey="SceneCode" msprop:Generator_UserChildTable="SceneCharacter" msprop:Generator_ChildPropName="GetSceneCharacterRows" msprop:Generator_UserParentTable="Scene" msprop:Generator_UserRelationName="Scene_SceneCharacter" msprop:Generator_RelationVarName="relationScene_SceneCharacter" msprop:Generator_ParentPropName="SceneRow" />
+      <msdata:Relationship name="Scene_SceneVersion" msdata:parent="Scene" msdata:child="SceneVersion" msdata:parentkey="SceneCode" msdata:childkey="SceneCode" msprop:Generator_UserChildTable="SceneVersion" msprop:Generator_ChildPropName="GetSceneVersionRows" msprop:Generator_UserParentTable="Scene" msprop:Generator_UserRelationName="Scene_SceneVersion" msprop:Generator_RelationVarName="relationScene_SceneVersion" msprop:Generator_ParentPropName="SceneRow" />
+      <msdata:Relationship name="Scene_StorylineScene" msdata:parent="Scene" msdata:child="StorylineScene" msdata:parentkey="SceneCode" msdata:childkey="SceneCode" msprop:Generator_UserChildTable="StorylineScene" msprop:Generator_ChildPropName="GetStorylineSceneRows" msprop:Generator_UserParentTable="Scene" msprop:Generator_UserRelationName="Scene_StorylineScene" msprop:Generator_RelationVarName="relationScene_StorylineScene" msprop:Generator_ParentPropName="SceneRow" />
+      <msdata:Relationship name="Storyline_StorylineScene" msdata:parent="Storyline" msdata:child="StorylineScene" msdata:parentkey="StorylineCode" msdata:childkey="StorylineCode" msprop:Generator_UserChildTable="StorylineScene" msprop:Generator_ChildPropName="GetStorylineSceneRows" msprop:Generator_UserParentTable="Storyline" msprop:Generator_UserRelationName="Storyline_StorylineScene" msprop:Generator_RelationVarName="relationStoryline_StorylineScene" msprop:Generator_ParentPropName="StorylineRow" />
+      <msdata:Relationship name="CharacterSex_Character" msdata:parent="CharacterSex" msdata:child="Character" msdata:parentkey="CharacterSexCode" msdata:childkey="Sex" msprop:Generator_UserChildTable="Character" msprop:Generator_ChildPropName="GetCharacterRows" msprop:Generator_ParentPropName="CharacterSexRow" msprop:Generator_UserRelationName="CharacterSex_Character" msprop:Generator_RelationVarName="relationCharacterSex_Character" msprop:Generator_UserParentTable="CharacterSex" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="CharacterUI.View.Controls.Character.CharacterObservationCtrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="287" d:DesignWidth="689">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TreeView Grid.Row="0" Grid.Column="0">
+            <TreeViewItem Header="Physical Characteristics">
+                <TreeViewItem Header="Hair colour?" />
+                <TreeViewItem Header="Eye colour?" />
+                <TreeViewItem Header="Facial features?" />
+                <TreeViewItem Header="Stature?" />
+            </TreeViewItem>
+            <TreeViewItem Header="Emotional Characteristics">
+                <TreeViewItem Header="How does this character react in a tough situation?" />
+                <TreeViewItem Header="Is this character moody, laid back, quiet or loud?" />
+            </TreeViewItem>
+        </TreeView>
+        <GridSplitter HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Column="1" 
+                                  ResizeDirection="Columns" ResizeBehavior="PreviousAndNext" Width="5" Background="#000000"></GridSplitter>
+        <StackPanel Grid.Row="0" Grid.Column="2">
+            <TextBlock Margin="5,2,2,2" TextWrapping="WrapWithOverflow">Question: How does this character react in tough situations?</TextBlock>
+            <TextBox MinHeight="200 "></TextBox>
+        </StackPanel>
+    </Grid>
+</UserControl>

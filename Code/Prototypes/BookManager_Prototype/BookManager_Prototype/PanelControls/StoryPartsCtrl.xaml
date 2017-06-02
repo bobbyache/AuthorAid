@@ -1,0 +1,108 @@
+﻿<UserControl x:Class="BookManager_Prototype.PanelControls.StoryPartsCtrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             Name="storyParts"
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
+             mc:Ignorable="d" 
+             d:DesignHeight="537" d:DesignWidth="381">
+    <UserControl.Resources>
+        <Image x:Key="WeatherIcon" Source="/BookManager_Prototype;component/Images/Sunny.ico" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <DockPanel Grid.Row="0" LastChildFill="True">
+                <TextBlock VerticalAlignment="Center" MinWidth="80" Margin="3">Plots</TextBlock>
+                <ComboBox Name="StorylineComboBox" ItemsSource="{Binding Path=StoryLines}" Margin="3" SelectionChanged="StorylineComboBox_SelectionChanged"></ComboBox>
+            </DockPanel>
+            <DockPanel Grid.Row="1" LastChildFill="True">
+                <TextBlock VerticalAlignment="Center" MinWidth="80" Margin="3">Find</TextBlock>
+                <ComboBox Margin="3" IsReadOnly="False" IsEditable="True"></ComboBox>
+            </DockPanel>
+            <ToolBar Grid.Row="2">
+                
+                <Button MinWidth="30" Height="30" Content="Add" IsEnabled="True" Name="AddStoryPartButton" Click="AddStoryPartButton_Click"/>
+                <Button MinWidth="30" Height="30" Content="Edit" IsEnabled="True" Name="EditStoryPartButton" Click="EditStoryPartButton_Click" />
+                <Button MinWidth="30" Height="30" Content="Up" IsEnabled="True"/>
+                <Button MinWidth="30" Height="30" Content="Down" IsEnabled="True" />
+                <Separator></Separator>
+                <TextBlock VerticalAlignment="Center" Margin="3" MinWidth="40" Text="Find:" />
+                <TextBox Name="txtKeywords"  MinWidth="100" />
+            </ToolBar>
+            <ListBox Name="CurrentStorylineListbox" Grid.Row="3" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemTemplate>
+                    <DataTemplate >
+                        <DockPanel Width="{Binding ElementName=listBox, Path=Width}"  LastChildFill="False">
+                            <StackPanel Width="{Binding ElementName=listBox, Path=Width}" DockPanel.Dock="Top" Margin="5">
+                                <TextBlock Foreground="White" Background="DarkGray"   TextTrimming="CharacterEllipsis" Width="{Binding ElementName=listBox, Path=Width}"  FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}"></TextBlock>
+                                <!--<StackPanel Orientation="Horizontal">
+                                    <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+                                        <TextBlock Text="53%" />
+                                        <TextBlock Text="Version 5" />
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                        <Rectangle Width="16" Height="16" Margin="1" Stroke="#FF938F8F" Fill="#FFB1D169" />
+                                        <Rectangle Width="16" Height="16" Margin="1" Stroke="#FF938F8F" Fill="#FFDB552D" />
+                                        <Rectangle Width="16" Height="16" Margin="1" Stroke="#FF938F8F" Fill="#FF8F9EF2" />
+                                    </StackPanel>
+                                </StackPanel>-->
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="60" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="60" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Version 101" />
+                                    <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                                        <Image Source="/BookManager_Prototype;component/Images/Sunny.ico" Width="32" Height="32" />
+                                        <!--<Rectangle Width="16" Height="16" Margin="1" Stroke="#FF938F8F" Fill="#FFB1D169" />-->
+                                        
+                                        <Rectangle Width="16" Height="16" Margin="1" Stroke="#FF938F8F" Fill="#FFDB552D" />
+                                        <Rectangle Width="16" Height="16" Margin="1" Stroke="#FF938F8F" Fill="#FF8F9EF2" />
+                                    </StackPanel>
+                                </Grid>
+                                <TextBlock MaxHeight="40" TextTrimming="CharacterEllipsis"  Width="{Binding ElementName=listBox, Path=Width}" TextWrapping="WrapWithOverflow" Text="{Binding Path=Summary}"></TextBlock>
+                                <ProgressBar HorizontalAlignment="Stretch" Height="5" Maximum="100" Value="{Binding Path=PercentComplete}" Foreground="Black" />
+                            </StackPanel>
+                        </DockPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <GridSplitter Grid.Row="1" 
+                                  ResizeDirection="Rows" ResizeBehavior="PreviousAndNext" Height="5" Background="#000000" HorizontalAlignment="Stretch"></GridSplitter>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Margin="3" VerticalAlignment="Center">Linked Plot Parts</TextBlock>
+            <ListBox Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding Path=LinkedParts}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate >
+                        <DockPanel Width="{Binding ElementName=listBox, Path=Width}"  LastChildFill="False">
+                            <StackPanel Width="{Binding ElementName=listBox, Path=Width}" DockPanel.Dock="Top" Margin="5">
+                                <TextBlock TextTrimming="CharacterEllipsis" Width="{Binding ElementName=listBox, Path=Width}"  FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}"></TextBlock>
+                                <TextBlock MaxHeight="40" TextTrimming="CharacterEllipsis"  Width="{Binding ElementName=listBox, Path=Width}" TextWrapping="WrapWithOverflow" Text="{Binding Path=Summary}"></TextBlock>
+                                <ProgressBar HorizontalAlignment="Left" Width="50" Height="5" Maximum="100" Value="{Binding Path=PercentComplete}"/>
+                            </StackPanel>
+                        </DockPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </Grid>
+
+</UserControl>

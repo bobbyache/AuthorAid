@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ResearchDataset" targetNamespace="http://tempuri.org/ResearchDataset.xsd" xmlns:mstns="http://tempuri.org/ResearchDataset.xsd" xmlns="http://tempuri.org/ResearchDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ResearchDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ResearchDataset" msprop:Generator_UserDSName="ResearchDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Topic" msprop:Generator_TableClassName="TopicDataTable" msprop:Generator_TableVarName="tableTopic" msprop:Generator_TablePropName="Topic" msprop:Generator_RowDeletingName="TopicRowDeleting" msprop:Generator_UserTableName="Topic" msprop:Generator_RowChangingName="TopicRowChanging" msprop:Generator_RowEvHandlerName="TopicRowChangeEventHandler" msprop:Generator_RowDeletedName="TopicRowDeleted" msprop:Generator_RowEvArgName="TopicRowChangeEvent" msprop:Generator_RowChangedName="TopicRowChanged" msprop:Generator_RowClassName="TopicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" />
+              <xs:element name="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" msprop:Generator_UserColumnName="Caption" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Url" msprop:Generator_TableClassName="UrlDataTable" msprop:Generator_TableVarName="tableUrl" msprop:Generator_TablePropName="Url" msprop:Generator_RowDeletingName="UrlRowDeleting" msprop:Generator_UserTableName="Url" msprop:Generator_RowChangingName="UrlRowChanging" msprop:Generator_RowEvHandlerName="UrlRowChangeEventHandler" msprop:Generator_RowDeletedName="UrlRowDeleted" msprop:Generator_RowEvArgName="UrlRowChangeEvent" msprop:Generator_RowChangedName="UrlRowChanged" msprop:Generator_RowClassName="UrlRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" />
+              <xs:element name="TopicCode" msprop:Generator_ColumnVarNameInTable="columnTopicCode" msprop:Generator_ColumnPropNameInRow="TopicCode" msprop:Generator_ColumnPropNameInTable="TopicCodeColumn" msprop:Generator_UserColumnName="TopicCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Url" msprop:Generator_ColumnVarNameInTable="columnUrl" msprop:Generator_ColumnPropNameInRow="Url" msprop:Generator_ColumnPropNameInTable="UrlColumn" msprop:Generator_UserColumnName="Url" type="xs:string" minOccurs="0" />
+              <xs:element name="DateCreated" msprop:Generator_ColumnVarNameInTable="columnDateCreated" msprop:Generator_ColumnPropNameInRow="DateCreated" msprop:Generator_ColumnPropNameInTable="DateCreatedColumn" msprop:Generator_UserColumnName="DateCreated" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Image" msprop:Generator_TableClassName="ImageDataTable" msprop:Generator_TableVarName="tableImage" msprop:Generator_TablePropName="Image" msprop:Generator_RowDeletingName="ImageRowDeleting" msprop:Generator_UserTableName="Image" msprop:Generator_RowChangingName="ImageRowChanging" msprop:Generator_RowEvHandlerName="ImageRowChangeEventHandler" msprop:Generator_RowDeletedName="ImageRowDeleted" msprop:Generator_RowEvArgName="ImageRowChangeEvent" msprop:Generator_RowChangedName="ImageRowChanged" msprop:Generator_RowClassName="ImageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" />
+              <xs:element name="TopicCode" msprop:Generator_ColumnVarNameInTable="columnTopicCode" msprop:Generator_ColumnPropNameInRow="TopicCode" msprop:Generator_ColumnPropNameInTable="TopicCodeColumn" msprop:Generator_UserColumnName="TopicCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" msprop:Generator_UserColumnName="Caption" type="xs:string" minOccurs="0" />
+              <xs:element name="ImageFile" msprop:Generator_ColumnVarNameInTable="columnImageFile" msprop:Generator_ColumnPropNameInRow="ImageFile" msprop:Generator_ColumnPropNameInTable="ImageFileColumn" msprop:Generator_UserColumnName="ImageFile" type="xs:string" minOccurs="0" />
+              <xs:element name="DateCreated" msprop:Generator_ColumnVarNameInTable="columnDateCreated" msprop:Generator_ColumnPropNameInRow="DateCreated" msprop:Generator_ColumnPropNameInTable="DateCreatedColumn" msprop:Generator_UserColumnName="DateCreated" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Attachment" msprop:Generator_TableClassName="AttachmentDataTable" msprop:Generator_TableVarName="tableAttachment" msprop:Generator_TablePropName="Attachment" msprop:Generator_RowDeletingName="AttachmentRowDeleting" msprop:Generator_UserTableName="Attachment" msprop:Generator_RowChangingName="AttachmentRowChanging" msprop:Generator_RowEvHandlerName="AttachmentRowChangeEventHandler" msprop:Generator_RowDeletedName="AttachmentRowDeleted" msprop:Generator_RowEvArgName="AttachmentRowChangeEvent" msprop:Generator_RowChangedName="AttachmentRowChanged" msprop:Generator_RowClassName="AttachmentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="TopicCode" msprop:Generator_ColumnVarNameInTable="columnTopicCode" msprop:Generator_ColumnPropNameInRow="TopicCode" msprop:Generator_ColumnPropNameInTable="TopicCodeColumn" msprop:Generator_UserColumnName="TopicCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" msprop:Generator_UserColumnName="Caption" type="xs:string" minOccurs="0" />
+              <xs:element name="AttachmentFile" msprop:Generator_ColumnVarNameInTable="columnAttachmentFile" msprop:Generator_ColumnPropNameInRow="AttachmentFile" msprop:Generator_ColumnPropNameInTable="AttachmentFileColumn" msprop:Generator_UserColumnName="AttachmentFile" type="xs:string" minOccurs="0" />
+              <xs:element name="DateCreated" msprop:Generator_ColumnVarNameInTable="columnDateCreated" msprop:Generator_ColumnPropNameInRow="DateCreated" msprop:Generator_ColumnPropNameInTable="DateCreatedColumn" msprop:Generator_UserColumnName="DateCreated" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Topic" />
+      <xs:field xpath="mstns:Code" />
+    </xs:unique>
+    <xs:unique name="Url_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Url" />
+      <xs:field xpath="mstns:Code" />
+    </xs:unique>
+    <xs:unique name="Image_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Image" />
+      <xs:field xpath="mstns:Code" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Topic_TopicUrl" msdata:parent="Topic" msdata:child="Url" msdata:parentkey="Code" msdata:childkey="TopicCode" msprop:Generator_UserChildTable="Url" msprop:Generator_ChildPropName="GetUrlRows" msprop:Generator_ParentPropName="TopicRow" msprop:Generator_UserRelationName="Topic_TopicUrl" msprop:Generator_RelationVarName="relationTopic_TopicUrl" msprop:Generator_UserParentTable="Topic" />
+      <msdata:Relationship name="Topic_TopicImage" msdata:parent="Topic" msdata:child="Image" msdata:parentkey="Code" msdata:childkey="TopicCode" msprop:Generator_UserChildTable="Image" msprop:Generator_ChildPropName="GetImageRows" msprop:Generator_ParentPropName="TopicRow" msprop:Generator_UserRelationName="Topic_TopicImage" msprop:Generator_RelationVarName="relationTopic_TopicImage" msprop:Generator_UserParentTable="Topic" />
+      <msdata:Relationship name="Topic_TopicAttachment" msdata:parent="Topic" msdata:child="Attachment" msdata:parentkey="Code" msdata:childkey="TopicCode" msprop:Generator_UserChildTable="Attachment" msprop:Generator_ChildPropName="GetAttachmentRows" msprop:Generator_ParentPropName="TopicRow" msprop:Generator_UserRelationName="Topic_TopicAttachment" msprop:Generator_RelationVarName="relationTopic_TopicAttachment" msprop:Generator_UserParentTable="Topic" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

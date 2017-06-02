@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="BookManager_Prototype.PanelControls.StoryPartCtrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Ctrls="clr-namespace:BookManager_Prototype.PanelControls"
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
+             mc:Ignorable="d" 
+             d:DesignHeight="524" d:DesignWidth="919">
+    <Grid Grid.Row="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <TextBlock VerticalAlignment="Center" Width="50" Grid.Row="0" Grid.Column="0" Margin="5,2,2,2">Title</TextBlock>
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="2"  Text="{Binding Title, Mode=TwoWay}"></TextBox>
+        </DockPanel>
+        <DockPanel Grid.Row="1">
+            <TextBlock VerticalAlignment="Center"  Width="50" Grid.Row="0" Grid.Column="0" Margin="5,2,2,2">Version</TextBlock>
+            <ComboBox Margin="5" MinWidth="50"  Grid.Row="0" Grid.Column="1">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+            </ComboBox>
+            <TextBlock VerticalAlignment="Center"  Width="60" Grid.Row="0" Grid.Column="0" Margin="5,2,2,2">Progress: </TextBlock>
+            <TextBlock VerticalAlignment="Center"  Text="{Binding Progress}"></TextBlock>
+            <TextBlock VerticalAlignment="Center"  Text="%"/>
+            <Slider Minimum="0" Maximum="100" Grid.Row="0" Grid.Column="1" Margin="2" Value="{Binding Progress, Mode=TwoWay}"></Slider>
+        </DockPanel>
+        <DockPanel Grid.Row="2">
+            <TextBlock VerticalAlignment="Top"  Width="50" Grid.Row="0" Grid.Column="0" Margin="5,2,2,2">Title</TextBlock>
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="2"  Text="{Binding Summary, Mode=TwoWay}"></TextBox>
+        </DockPanel>
+        <Ctrls:ManuscriptEditor x:Name="manuscriptEditor" Grid.Row="3"></Ctrls:ManuscriptEditor>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" >
+            <Button Content="Cancel" />
+            <Button Content="Save" Name="SaveButton" Click="SaveButton_Click" />
+        </StackPanel>
+    </Grid>
+</UserControl>

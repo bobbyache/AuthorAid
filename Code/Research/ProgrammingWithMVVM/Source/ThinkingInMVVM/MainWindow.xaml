@@ -1,0 +1,14 @@
+﻿<Window x:Class="ThinkingInMVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:src="clr-namespace:MVVMDemo"
+        Title="MainWindow" Height="274" Width="569">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*" />
+            <ColumnDefinition Width="50*" />
+        </Grid.ColumnDefinitions>
+        <src:MvvmThinkingBefore Grid.Column="0" />
+        <src:MvvmThinkingAfter Grid.Column="1" />
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="BookManager_Prototype.PanelControls.ManuscriptEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="394" d:DesignWidth="704">
+    <Grid>
+        <RichTextBox Name="editor" SpellCheck.IsEnabled="True" Margin="5" Padding="40">
+            <FlowDocument>
+                <Section>
+                    <Paragraph FontFamily="Georgia" FontSize="12" TextIndent="30" Margin="20">Hey there punk</Paragraph>
+                </Section>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</UserControl>

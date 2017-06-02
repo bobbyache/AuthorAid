@@ -1,0 +1,47 @@
+﻿<Window x:Class="BookManager_Prototype.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:avalonDock="http://schemas.xceed.com/wpf/xaml/avalondock"
+        xmlns:Ctrls="clr-namespace:BookManager_Prototype.PanelControls"
+        xmlns:winformsIntegration="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        Name="fluidStory"
+        Title="MainWindow" Height="494" Width="1108">
+    <Grid>
+        <avalonDock:DockingManager x:Name="docManager">
+            <avalonDock:LayoutRoot>
+                <avalonDock:LayoutPanel Orientation="Horizontal">
+                    <avalonDock:LayoutAnchorablePane DockWidth="500">
+                        <avalonDock:LayoutAnchorable x:Name="winFormsWindow" Title="Storyline" ToolTip="My Win Forms Window">
+                            <Ctrls:StoryPartsCtrl x:Name="Testing" StoryPartCreated="Testing_StoryPartCreated" />
+                            <!--<Ctrls:StoryPartsCtrl x:Name="CurrentStorylineCtrl" StoryPartCreated="CurrentStorylineCtrl_NewStoryPartCreated">
+                                
+                            </Ctrls:StoryPartsCtrl>-->
+                        </avalonDock:LayoutAnchorable>
+                    </avalonDock:LayoutAnchorablePane>
+                    <avalonDock:LayoutDocumentPaneGroup>
+                        <avalonDock:LayoutDocumentPane x:Name="MainLayoutPane">
+                            <!--<avalonDock:LayoutDocument Title="Wayne dropped his boss off in his car ...">
+                                <Ctrls:StoryPartCtrl></Ctrls:StoryPartCtrl>
+                            </avalonDock:LayoutDocument>
+                            <avalonDock:LayoutDocument Title="Wayne dropped his boss off in his car ...">
+                                <Ctrls:StoryPartCtrl></Ctrls:StoryPartCtrl>
+                            </avalonDock:LayoutDocument>
+                            <avalonDock:LayoutDocument Title="Wayne dropped his boss off in his car ...">
+                                <Ctrls:StoryPartCtrl></Ctrls:StoryPartCtrl>
+                            </avalonDock:LayoutDocument>
+                            <avalonDock:LayoutDocument Title="Wayne dropped his boss off in his car ...">
+                                <Ctrls:StoryPartCtrl></Ctrls:StoryPartCtrl>
+                            </avalonDock:LayoutDocument>
+                            <avalonDock:LayoutDocument Title="Wayne dropped his boss off in his car ...">
+                                <Ctrls:StoryPartCtrl></Ctrls:StoryPartCtrl>
+                            </avalonDock:LayoutDocument>
+                            <avalonDock:LayoutDocument Title="Wayne dropped his boss off in his car ...">
+                                <Ctrls:StoryPartCtrl></Ctrls:StoryPartCtrl>
+                            </avalonDock:LayoutDocument>-->
+                        </avalonDock:LayoutDocumentPane>
+                    </avalonDock:LayoutDocumentPaneGroup>
+                </avalonDock:LayoutPanel>
+            </avalonDock:LayoutRoot>
+        </avalonDock:DockingManager>
+    </Grid>
+</Window>

@@ -1,0 +1,41 @@
+﻿<Window x:Class="AuthorAid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Name="myGrid" DataContext="{Binding Main, Source={StaticResource ViewModelLocator}}">
+        <ListBox Name="CurrentStorylineListbox" Grid.Row="3" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBoxItem>
+                <!--<TextBlock TextTrimming="CharacterEllipsis" FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}"></TextBlock>-->
+                <StackPanel Margin="5">
+                    <TextBlock Background="LightGray" TextTrimming="CharacterEllipsis" FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=HelloWorld}"></TextBlock>
+                    <TextBlock MaxHeight="40" TextTrimming="CharacterEllipsis"  Width="{Binding ElementName=listBox, Path=Width}" TextWrapping="WrapWithOverflow" Text="{Binding Path=Summary}"></TextBlock>
+                    <ProgressBar HorizontalAlignment="Left" Width="50" Height="5" Maximum="100" Value="{Binding Path=PercentComplete}"/>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem>
+                <!--<TextBlock TextTrimming="CharacterEllipsis" FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}"></TextBlock>-->
+                <StackPanel Margin="5">
+                    <TextBlock Background="LightGray"  TextTrimming="CharacterEllipsis" FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}"></TextBlock>
+                    <TextBlock MaxHeight="40" TextTrimming="CharacterEllipsis"  Width="{Binding ElementName=listBox, Path=Width}" TextWrapping="WrapWithOverflow" Text="{Binding Path=Summary}"></TextBlock>
+                    <ProgressBar HorizontalAlignment="Left" Width="50" Height="5" Maximum="100" Value="{Binding Path=PercentComplete}"/>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem>
+                <!--<TextBlock TextTrimming="CharacterEllipsis" FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}"></TextBlock>-->
+                <StackPanel Margin="5">
+                    <TextBlock Background="LightGray"  TextTrimming="CharacterEllipsis" FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}"></TextBlock>
+                    <TextBlock MaxHeight="40" TextTrimming="CharacterEllipsis"  Width="{Binding ElementName=listBox, Path=Width}" TextWrapping="WrapWithOverflow" Text="{Binding Path=Summary}"></TextBlock>
+                    <ProgressBar HorizontalAlignment="Left" Width="50" Height="5" Maximum="100" Value="{Binding Path=PercentComplete}"/>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem>
+                <!--<TextBlock TextTrimming="CharacterEllipsis" FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}"></TextBlock>-->
+                <StackPanel Margin="5">
+                    <TextBlock Background="LightGray"  TextTrimming="CharacterEllipsis" FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}"></TextBlock>
+                    <TextBlock MaxHeight="40" TextTrimming="CharacterEllipsis"  Width="{Binding ElementName=listBox, Path=Width}" TextWrapping="WrapWithOverflow" Text="{Binding Path=Summary}"></TextBlock>
+                    <ProgressBar HorizontalAlignment="Left" Width="50" Height="5" Maximum="100" Value="{Binding Path=PercentComplete}"/>
+                </StackPanel>
+            </ListBoxItem>
+        </ListBox>
+    </Grid>
+</Window>

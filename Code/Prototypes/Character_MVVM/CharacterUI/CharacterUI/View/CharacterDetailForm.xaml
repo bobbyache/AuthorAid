@@ -1,0 +1,42 @@
+﻿<Window x:Class="CharacterUI.View.CharacterDetailForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:charctrl="clr-namespace:CharacterUI.View.Controls.Character"
+        Title="CharacterDetailForm" Height="445" Width="1008">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <TabControl Grid.Row="0">
+            <TabItem Header="Description">
+                <charctrl:CharacterMainDetailCtrl />
+            </TabItem>
+            <TabItem Header="History \ Backstory">
+                <charctrl:CharacterHistoryCtrl />
+            </TabItem>
+            <TabItem Header="Image" Visibility="Hidden">
+                <charctrl:CharacterImagesCtrl />
+            </TabItem>
+            <TabItem Header="Observations\Characteristics" Visibility="Hidden">
+                <charctrl:CharacterObservationCtrl />
+            </TabItem>
+            <TabItem Header="If...Then... Analysis" Visibility="Hidden">
+                <charctrl:CharacterIfThenAnalysisCtrl />
+            </TabItem>
+            <TabItem Header="Traits" Visibility="Hidden">
+                <charctrl:CharacterTraitsCtrl />
+            </TabItem>
+            <TabItem Header="Relationships" Visibility="Hidden">
+                <charctrl:CharacterRelationshipsCtrl />
+            </TabItem>
+            <TabItem Header="Concepts" Visibility="Hidden">
+                <charctrl:CharacterConceptsCtrl />
+            </TabItem>
+        </TabControl>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button MinWidth="80" Margin="5">OK</Button>
+            <Button MinWidth="80" Margin="5">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</Window>

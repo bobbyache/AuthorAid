@@ -1,0 +1,18 @@
+﻿<Window x:Class="CommandSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:MVVMDemo"
+        Title="MainWindow" Height="306" Width="383">
+    <Window.Resources>
+        <local:SimpleCommand x:Key="cmdSimple" />
+    </Window.Resources>
+    <Grid>
+        <Button Content="Simple Command" Margin="37,34,120,201" 
+                Command="{StaticResource cmdSimple}" />
+        <Button Content="Simple Command 2" Margin="37,88,120,147"
+                Command="{StaticResource cmdSimple}"
+                CommandParameter="{Binding Path=Text, ElementName=textBox1}" />
+        <TextBox Margin="42,159,120,74" Name="textBox1"
+                 TextChanged="textBox1_TextChanged" />
+    </Grid>
+</Window>

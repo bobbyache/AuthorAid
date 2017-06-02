@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="CharacterUI.View.Controls.Character.CharacterTraitsCtrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel>
+        <TextBlock Margin="3" TextWrapping="WrapWithOverflow"> This is how you decide whether a character is an antagonist or a protagonist. 
+                        Remember that no one can be a complete protagonist or antagonist. Try 60% vs. 40% rule. Create character traits between 90% and 10%</TextBlock>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <GridSplitter HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Column="1" 
+                                      ResizeDirection="Columns" ResizeBehavior="PreviousAndNext" Width="5" Background="#000000"></GridSplitter>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="23" />
+                    <RowDefinition Height="23" />
+                    <RowDefinition Height="180" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Margin="5,2,2,2">Good Traits</TextBlock>
+                <ToolBar Grid.Row="1" Grid.Column="0"></ToolBar>
+                <ListBox Grid.Row="2" Grid.Column="0">
+                    <CheckBox>
+                        <TextBlock>Is very kindly with old people.</TextBlock>
+                    </CheckBox>
+                    <CheckBox>Never forgets to send his friends christmas cards.</CheckBox>
+                </ListBox>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="23" />
+                    <RowDefinition Height="23" />
+                    <RowDefinition Height="180" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Margin="5,2,2,2">Bad Traits</TextBlock>
+                <ToolBar Grid.Row="1" Grid.Column="0"></ToolBar>
+                <ListBox Grid.Row="2" Grid.Column="0">
+                    <CheckBox>Lazy worker, and not an ambitious person.</CheckBox>
+                    <CheckBox>Does not take care of himself, looks untidy.</CheckBox>
+                </ListBox>
+            </Grid>
+        </Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock>Good</TextBlock>
+            <Slider MinWidth="400" Margin="10" Maximum="100" Value="60"></Slider>
+            <TextBlock>Bad</TextBlock>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

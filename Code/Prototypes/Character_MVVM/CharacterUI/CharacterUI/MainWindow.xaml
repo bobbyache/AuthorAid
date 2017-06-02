@@ -1,0 +1,35 @@
+﻿<Window x:Class="CharacterUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:app="clr-namespace:CharacterUI.Application"
+
+        xmlns:charctrl="clr-namespace:CharacterUI.View.Controls.Character"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.CommandBindings>
+        <!--<CommandBinding Command="New" Executed="NewProject_Executed" CanExecute="NewProject_CanExecute" />--> 
+        <!--<CommandBinding Command=""/>
+        <CommandBinding Command="Open" />
+        <CommandBinding Command="SaveAs"/>-->
+        <!--<CommandBinding Command="local:SystemCommands.EditLink" Executed="EditLink_Executed" CanExecute="FileOperation_CanExecute" />
+        <CommandBinding Command="local:SystemCommands.Search" Executed="Search_Executed" CanExecute="FileOperation_CanExecute" />
+        <CommandBinding Command="local:SystemCommands.AddLink" Executed="AddLink_Executed" CanExecute="FileOperation_CanExecute" />-->
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="New" Command="{Binding NewProjectCommand}" />
+                <MenuItem Header="Open" Command="{Binding OpenProjectCommand}" />
+                <MenuItem Header="Recent" Name="RecentFilesMenu" />
+            </MenuItem>
+        </Menu>
+        <charctrl:CharacterManagerCtrl Grid.Row="1" x:Name="CharacterListControl" />
+        <StatusBar Grid.Row="2">
+            <TextBlock Text="{Binding ProjectFile}" />
+        </StatusBar>
+    </Grid>
+</Window>

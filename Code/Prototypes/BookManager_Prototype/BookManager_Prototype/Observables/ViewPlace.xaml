@@ -1,0 +1,128 @@
+﻿<Window x:Class="BookManager_Prototype.Observables.ViewPlace"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ViewPlace" Height="345" Width="687">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <TabControl Grid.Row="0">
+            <TabItem Header="Description">
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="80" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Margin="5,2,2,2">Name</TextBlock>
+                    <TextBox Grid.Row="0" Grid.Column="1" Margin="2"></TextBox>
+                    <TextBlock Grid.Row="0" Grid.Column="2" Margin="5,2,2,2">Alias Code:</TextBlock>
+                    <TextBox Grid.Row="0" Grid.Column="3" Margin="2"></TextBox>
+                    <TextBlock Grid.Row="1" Grid.Column="0" Margin="5,2,2,2">Type</TextBlock>
+                    <ComboBox Grid.Row="1" Grid.Column="1" Margin="2"></ComboBox>
+
+                    <TextBlock Grid.Row="1" Grid.Column="2" Margin="5,2,2,2">Aliases</TextBlock>
+                    <TextBox Grid.Row="1" Grid.Column="3" Margin="2"></TextBox>
+
+                    <TextBlock Grid.Row="2" Grid.ColumnSpan="4" Margin="2" VerticalAlignment="Bottom">Summary</TextBlock>
+                    <TextBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4"></TextBox>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Image">
+                <Image Margin="50" Source="/BookManager_Prototype;component/Images/IMGP2391.JPG"></Image>
+            </TabItem>
+            <TabItem Header="Observations\Characteristics">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <!--<GridSplitter ResizeDirection="Columns" Grid.Column="1" />-->
+                    <TreeView Grid.Row="0" Grid.Column="0">
+                        <TreeViewItem Header="Physical Characteristics">
+                            <TreeViewItem Header="Hair colour?" />
+                            <TreeViewItem Header="Eye colour?" />
+                            <TreeViewItem Header="Facial features?" />
+                            <TreeViewItem Header="Stature?" />
+                        </TreeViewItem>
+                        <TreeViewItem Header="Emotional Characteristics">
+                            <TreeViewItem Header="How does this character react in a tough situation?" />
+                            <TreeViewItem Header="Is this character moody, laid back, quiet or loud?" />
+                        </TreeViewItem>
+                    </TreeView>
+                    <GridSplitter HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Column="1" 
+                                  ResizeDirection="Columns" ResizeBehavior="PreviousAndNext" Width="5" Background="#000000"></GridSplitter>
+                    <StackPanel Grid.Row="0" Grid.Column="2">
+                        <TextBlock Margin="5,2,2,2" TextWrapping="WrapWithOverflow">Question: How does this character react in tough situations?</TextBlock>
+                        <TextBox MinHeight="200 "></TextBox>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="If...Then... Analysis">
+                <StackPanel>
+                    <TextBlock Padding="10">
+                        <Run FontFamily="Georgia" FontSize="12" FontWeight="ExtraBold">IF </Run>
+                        goblins are both very ugly and very gregarious (i.e., always together in groups), <LineBreak/>
+                        <Run FontFamily="Georgia" FontSize="12" FontWeight="ExtraBold">THEN</Run>
+                        they must have temperaments that are unflappable and callous...
+                    </TextBlock>
+                    <TextBlock Padding="10">
+                        <Run FontFamily="Georgia" FontSize="12" FontWeight="ExtraBold">IF </Run>
+                        a race can produce members of great variety in appearance, <LineBreak/>
+                        <Run FontFamily="Georgia" FontSize="12" FontWeight="ExtraBold">THEN</Run>
+                        their aesthetics must be very broad: they will call many different sorts of appearances "beautiful."
+                    </TextBlock>
+                    <TextBlock Padding="10">
+                        <Run FontFamily="Georgia" FontSize="12" FontWeight="ExtraBold">IF </Run>
+                        Marak is both highly intelligent and callous, <LineBreak/>
+                        <Run FontFamily="Georgia" FontSize="12" FontWeight="ExtraBold">THEN</Run>
+                        he will either find the behavior of others very boring or very interesting and amusing.
+                    </TextBlock>
+                    <TextBlock Padding="10">
+                        <Run FontFamily="Georgia" FontSize="12" FontWeight="ExtraBold">IF </Run>
+                        Charm, the magical snake, has had the same job for thousands of years and still loves it, <LineBreak/>
+                        <Run FontFamily="Georgia" FontSize="12" FontWeight="ExtraBold">THEN</Run>
+                        this creature must have an "abnormal" narrowness of focus and interest in its occupation.
+                    </TextBlock>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Relationships">
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="150"  Header="Relationship"/>
+                            <GridViewColumn Width="150"  Header="Sub-Story"/>
+                            <GridViewColumn Width="250" Header="Entities" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            <TabItem Header="Concepts">
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="200"  Header="Concept"/>
+                            <GridViewColumn Width="400" Header="Percentage Complete" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            <TabItem Header="History \ Backstory"></TabItem>
+        </TabControl>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button MinWidth="80" Margin="5">OK</Button>
+            <Button MinWidth="80" Margin="5">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</Window>

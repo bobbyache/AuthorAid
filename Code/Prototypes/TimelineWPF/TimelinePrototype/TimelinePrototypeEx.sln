@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimelineLib", "TimelineLib\TimelineLib.csproj", "{D2188E92-117C-4E93-A759-5CC251DC226D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimelineExLib", "TimelineExLib\TimelineExLib.csproj", "{BB090A20-FF73-4AED-B74A-92AD7E9586D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2188E92-117C-4E93-A759-5CC251DC226D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2188E92-117C-4E93-A759-5CC251DC226D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2188E92-117C-4E93-A759-5CC251DC226D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2188E92-117C-4E93-A759-5CC251DC226D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB090A20-FF73-4AED-B74A-92AD7E9586D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB090A20-FF73-4AED-B74A-92AD7E9586D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB090A20-FF73-4AED-B74A-92AD7E9586D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB090A20-FF73-4AED-B74A-92AD7E9586D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

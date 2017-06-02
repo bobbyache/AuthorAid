@@ -1,0 +1,14 @@
+﻿<Application x:Class="BookManager_Prototype.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+             StartupUri="Observables\ViewCharacter.xaml"
+             >
+    <Application.Resources>
+         
+    </Application.Resources>
+    <!--StartupUri="MainWindow.xaml"-->
+    <!--StartupUri="Observables\ViewCharacter.xaml"-->
+</Application>
+
+

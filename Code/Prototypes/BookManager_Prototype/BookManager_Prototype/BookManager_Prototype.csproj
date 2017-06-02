@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1DFE8BD1-2F8E-4A54-88E5-A472DA947666}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookManager_Prototype</RootNamespace>
+    <AssemblyName>BookManager_Prototype</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.3.17121.18230, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xceed.Wpf.AvalonDock.3.3.17121.18230\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Controls\IfThenItem.xaml.cs">
+      <DependentUpon>IfThenItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\DocumentObject.cs" />
+    <Compile Include="Domain\FluidStory\StoryLine.cs" />
+    <Compile Include="Domain\FluidStory\StoryPart.cs" />
+    <Compile Include="Domain\FluidStory\StoryPartVersion.cs" />
+    <Compile Include="Domain\IPositionalList.cs" />
+    <Compile Include="Domain\PersistableObject.cs" />
+    <Compile Include="Domain\StoryManager.cs" />
+    <Compile Include="Domain\SummaryObject.cs" />
+    <Compile Include="FileRepository\DataRepository.cs" />
+    <Compile Include="FileRepository\Readers\StorylineReader.cs" />
+    <Compile Include="FileRepository\Writers\StorylineWriter.cs" />
+    <Compile Include="FluidStory\EditStoryPart.xaml.cs">
+      <DependentUpon>EditStoryPart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FluidStory\ReOrder.xaml.cs">
+      <DependentUpon>ReOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelControls\ManuscriptEditor.xaml.cs">
+      <DependentUpon>ManuscriptEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelControls\StoryPartCtrl.xaml.cs">
+      <DependentUpon>StoryPartCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelControls\StoryPartsCtrl.xaml.cs">
+      <DependentUpon>StoryPartsCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\IdeaBox.xaml.cs">
+      <DependentUpon>IdeaBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManagement\Project.cs" />
+    <Compile Include="Statistics\ChapterWordCount.xaml.cs">
+      <DependentUpon>ChapterWordCount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\ChapterWordCountControl.xaml.cs">
+      <DependentUpon>ChapterWordCountControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TypeExtensions\StringExtensions.cs" />
+    <Compile Include="ViewModelBase.cs" />
+    <Page Include="Controls\IfThenItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FluidStory\MainStory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FluidStory\EditStoryPart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FluidStory\ReOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Observables\CharacterListing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Observables\CreateObservable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FluidStory\MainStory.xaml.cs">
+      <DependentUpon>MainStory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Observables\CharacterListing.xaml.cs">
+      <DependentUpon>CharacterListing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Observables\CreateObservable.xaml.cs">
+      <DependentUpon>CreateObservable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Observables\ViewCharacter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Observables\ViewPlace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Observables\ViewRelationship.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Observables\ViewThing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PanelControls\ManuscriptEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PanelControls\StoryPartCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PanelControls\StoryPartsCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Planning\IdeaBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Statistics\ChapterWordCount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Statistics\ChapterWordCountControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Observables\ViewCharacter.xaml.cs">
+      <DependentUpon>ViewCharacter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Observables\ViewPlace.xaml.cs">
+      <DependentUpon>ViewPlace.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Observables\ViewRelationship.xaml.cs">
+      <DependentUpon>ViewRelationship.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Observables\ViewThing.xaml.cs">
+      <DependentUpon>ViewThing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\IMGP2391.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sunny.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="StoryProject.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

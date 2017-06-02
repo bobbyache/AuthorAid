@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengingUI", "MessengingUI.csproj", "{41E33210-0241-4A1F-B09A-C7989EEB0350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormLibrary", "..\WinFormLibrary\WinFormLibrary.csproj", "{81A9C2C5-7012-43CD-A3C4-F89E6C98F5A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41E33210-0241-4A1F-B09A-C7989EEB0350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E33210-0241-4A1F-B09A-C7989EEB0350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E33210-0241-4A1F-B09A-C7989EEB0350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E33210-0241-4A1F-B09A-C7989EEB0350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81A9C2C5-7012-43CD-A3C4-F89E6C98F5A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A9C2C5-7012-43CD-A3C4-F89E6C98F5A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A9C2C5-7012-43CD-A3C4-F89E6C98F5A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81A9C2C5-7012-43CD-A3C4-F89E6C98F5A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+﻿<Window x:Class="BookManager_Prototype.Observables.CharacterListing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CharacterListing" Height="300" Width="650"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        >
+    <Grid>
+        <ListView Margin="10"  ItemsSource="{Binding CharacterList}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="70" DisplayMemberBinding="{Binding FirstName}"  Header="First Name"/>
+                    <GridViewColumn Width="70" DisplayMemberBinding="{Binding PlaceholderCode}"  Header="Last Name"/>
+                    <GridViewColumn Width="70" DisplayMemberBinding="{Binding Aliases}" Header="Aliases" />
+                    <GridViewColumn Width="70" DisplayMemberBinding="{Binding PlaceholderCode}" Header="Replace Code" />
+                    <GridViewColumn Width="70" DisplayMemberBinding="{Binding Sex}" Header="Sex" />
+                    <GridViewColumn Width="70" DisplayMemberBinding="{Binding Role}" Header="Role" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="AuthorAid.Controls.StorySceneListControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <ListBox Name="CurrentStorylineListbox" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ListBox.ItemTemplate>
+            <DataTemplate >
+                <StackPanel Width="{Binding ElementName=listBox, Path=Width}" DockPanel.Dock="Top" Margin="5">
+                    <TextBlock Foreground="White" Background="DarkGray"   TextTrimming="CharacterEllipsis" FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}"></TextBlock>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="60" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Version 101" />
+                        <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                            <Rectangle Width="16" Height="16" Margin="1" Stroke="#FF938F8F" Fill="#FFB1D169" />
+                            <Rectangle Width="16" Height="16" Margin="1" Stroke="#FF938F8F" Fill="#FFDB552D" />
+                            <Rectangle Width="16" Height="16" Margin="1" Stroke="#FF938F8F" Fill="#FF8F9EF2" />
+                        </StackPanel>
+                    </Grid>
+                    <TextBlock MaxHeight="40" TextTrimming="CharacterEllipsis"  TextWrapping="WrapWithOverflow" Text="{Binding Path=Summary}"></TextBlock>
+                    <ProgressBar HorizontalAlignment="Stretch" Height="5" Maximum="100" Value="{Binding Path=PercentComplete}" Foreground="Black" />
+                </StackPanel>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
+</UserControl>

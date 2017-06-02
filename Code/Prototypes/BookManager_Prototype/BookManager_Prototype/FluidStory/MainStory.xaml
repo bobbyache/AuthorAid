@@ -1,0 +1,43 @@
+﻿<Window x:Class="BookManager_Prototype.FluidStory.MainStory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainStory" Height="516" Width="544"
+        Name="fluidStory"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+    >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ToolBar Grid.Row="0">
+            <Button MinWidth="30" Height="30" Content="Create" IsEnabled="True"/>
+            <Button MinWidth="30" Height="30" Content="Edit" IsEnabled="True"/>
+            <Button MinWidth="30" Height="30" Content="Attach" IsEnabled="True"/>
+            <Button MinWidth="30" Height="30" Content="Detach" IsEnabled="False" ></Button>
+            <Button MinWidth="30" Height="30" Content="Save" IsEnabled="True"/>
+            <Separator></Separator>
+            <Button MinWidth="30" Height="30" Content="Up" IsEnabled="True"/>
+            <Button MinWidth="30" Height="30" Content="Down" IsEnabled="True"/>
+            <Separator></Separator>
+            <TextBlock VerticalAlignment="Center" Margin="3" MinWidth="60" Text="Title Filter:" />
+            <TextBox MinWidth="60" />
+            <Button HorizontalAlignment="Right" MinWidth="30" Height="30" Content="Search"/>
+        </ToolBar>
+        <ListBox Name="listBox" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding ElementName=fluidStory, Path=StoryParts}">
+            <ListBox.ItemTemplate>
+                <DataTemplate >
+                    <DockPanel Width="{Binding ElementName=listBox, Path=Width}"  LastChildFill="False">
+                        <StackPanel Width="{Binding ElementName=listBox, Path=Width}" DockPanel.Dock="Top" Margin="5">
+                            <TextBlock TextTrimming="CharacterEllipsis" Width="{Binding ElementName=listBox, Path=Width}"  FontWeight="ExtraBold" TextWrapping="WrapWithOverflow" Text="{Binding Path=Title}"></TextBlock>
+                            <TextBlock FontWeight="Bold" Margin="3" Text="{Binding Path=StatusVersionText}" />
+                            <ProgressBar HorizontalAlignment="Left" Width="50" Height="5" Maximum="100" Value="{Binding Path=PercentComplete}"/>
+                            
+                            <TextBlock MaxHeight="40" TextTrimming="CharacterEllipsis"  Width="{Binding ElementName=listBox, Path=Width}" TextWrapping="WrapWithOverflow" Text="{Binding Path=Summary}"></TextBlock>
+                        </StackPanel>
+                    </DockPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

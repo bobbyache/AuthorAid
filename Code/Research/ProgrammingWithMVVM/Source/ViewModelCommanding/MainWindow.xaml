@@ -1,0 +1,15 @@
+﻿<Window x:Class="ViewModelCommanding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:MVVMDemo.ViewModel"
+        Title="{Binding ViewTitle}" Height="312" Width="361">
+    <Window.DataContext>
+        <vm:SampleViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Button Content="{Binding SimpleCommand.Label}" Margin="44,88,113,147" 
+                Command="{Binding SimpleCommand}" />
+        <TextBox Height="32" HorizontalAlignment="Left" Margin="44,32,0,0" VerticalAlignment="Top" Width="145"
+                 Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
+    </Grid>
+</Window>

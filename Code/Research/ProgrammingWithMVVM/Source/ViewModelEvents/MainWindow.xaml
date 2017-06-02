@@ -1,0 +1,17 @@
+﻿<Window x:Class="ViewModelEvents.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:MVVMDemo.ViewModel"
+        Title="{Binding ViewTitle}" Height="304" Width="333">
+    <Window.DataContext>
+        <vm:SampleViewModel Navigate="ViewModel_Navigate" />
+    </Window.DataContext>
+    <Grid>
+        <Button Content="{Binding SimpleCommand.Label}" Margin="44,88,113,147" 
+                Command="{Binding SimpleCommand}" />
+        <TextBox Height="32" HorizontalAlignment="Left" Margin="44,32,0,0" VerticalAlignment="Top" Width="145"
+                 Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button Command="{Binding NavigateCommand}" 
+                Content="{Binding NavigateCommand.Label}" Margin="44,139,113,96" />
+    </Grid>
+</Window>

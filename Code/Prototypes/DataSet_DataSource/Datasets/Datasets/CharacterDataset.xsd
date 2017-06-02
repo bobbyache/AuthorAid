@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CharacterDataset" targetNamespace="http://tempuri.org/CharacterDataset.xsd" xmlns:mstns="http://tempuri.org/CharacterDataset.xsd" xmlns="http://tempuri.org/CharacterDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CharacterDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CharacterDataset" msprop:Generator_UserDSName="CharacterDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Character" msprop:Generator_TableClassName="CharacterDataTable" msprop:Generator_TableVarName="tableCharacter" msprop:Generator_TablePropName="Character" msprop:Generator_RowDeletingName="CharacterRowDeleting" msprop:Generator_UserTableName="Character" msprop:Generator_RowChangingName="CharacterRowChanging" msprop:Generator_RowEvHandlerName="CharacterRowChangeEventHandler" msprop:Generator_RowDeletedName="CharacterRowDeleted" msprop:Generator_RowEvArgName="CharacterRowChangeEvent" msprop:Generator_RowChangedName="CharacterRowChanged" msprop:Generator_RowClassName="CharacterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName" type="xs:string" minOccurs="0" />
+              <xs:element name="Aliases" msprop:Generator_ColumnVarNameInTable="columnAliases" msprop:Generator_ColumnPropNameInRow="Aliases" msprop:Generator_ColumnPropNameInTable="AliasesColumn" msprop:Generator_UserColumnName="Aliases" type="xs:string" minOccurs="0" />
+              <xs:element name="PlaceholderCode" msprop:Generator_ColumnVarNameInTable="columnPlaceholderCode" msprop:Generator_ColumnPropNameInRow="PlaceholderCode" msprop:Generator_ColumnPropNameInTable="PlaceholderCodeColumn" msprop:Generator_UserColumnName="PlaceholderCode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Characteristic" msprop:Generator_TableClassName="CharacteristicDataTable" msprop:Generator_TableVarName="tableCharacteristic" msprop:Generator_TablePropName="Characteristic" msprop:Generator_RowDeletingName="CharacteristicRowDeleting" msprop:Generator_UserTableName="Characteristic" msprop:Generator_RowChangingName="CharacteristicRowChanging" msprop:Generator_RowEvHandlerName="CharacteristicRowChangeEventHandler" msprop:Generator_RowDeletedName="CharacteristicRowDeleted" msprop:Generator_RowEvArgName="CharacteristicRowChangeEvent" msprop:Generator_RowChangedName="CharacteristicRowChanged" msprop:Generator_RowClassName="CharacteristicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="CategoryCode" msprop:Generator_ColumnVarNameInTable="columnCategoryCode" msprop:Generator_ColumnPropNameInRow="CategoryCode" msprop:Generator_ColumnPropNameInTable="CategoryCodeColumn" msprop:Generator_UserColumnName="CategoryCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" msprop:Generator_UserColumnName="Caption" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnDataColumn1" msprop:Generator_ColumnPropNameInRow="DataColumn1" msprop:Generator_ColumnPropNameInTable="DataColumn1Column" msprop:Generator_UserColumnName="DataColumn1" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Category" msprop:Generator_TableClassName="CategoryDataTable" msprop:Generator_TableVarName="tableCategory" msprop:Generator_TablePropName="Category" msprop:Generator_RowDeletingName="CategoryRowDeleting" msprop:Generator_UserTableName="Category" msprop:Generator_RowChangingName="CategoryRowChanging" msprop:Generator_RowEvHandlerName="CategoryRowChangeEventHandler" msprop:Generator_RowDeletedName="CategoryRowDeleted" msprop:Generator_RowEvArgName="CategoryRowChangeEvent" msprop:Generator_RowChangedName="CategoryRowChanged" msprop:Generator_RowClassName="CategoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" msprop:Generator_UserColumnName="Caption" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DefaultCategory" msprop:Generator_TableClassName="DefaultCategoryDataTable" msprop:Generator_TableVarName="tableDefaultCategory" msprop:Generator_TablePropName="DefaultCategory" msprop:Generator_RowDeletingName="DefaultCategoryRowDeleting" msprop:Generator_UserTableName="DefaultCategory" msprop:Generator_RowChangingName="DefaultCategoryRowChanging" msprop:Generator_RowEvHandlerName="DefaultCategoryRowChangeEventHandler" msprop:Generator_RowDeletedName="DefaultCategoryRowDeleted" msprop:Generator_RowEvArgName="DefaultCategoryRowChangeEvent" msprop:Generator_RowChangedName="DefaultCategoryRowChanged" msprop:Generator_RowClassName="DefaultCategoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" msprop:Generator_UserColumnName="Caption" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DefaultCharacteristic" msprop:Generator_TableClassName="DefaultCharacteristicDataTable" msprop:Generator_TableVarName="tableDefaultCharacteristic" msprop:Generator_TablePropName="DefaultCharacteristic" msprop:Generator_RowDeletingName="DefaultCharacteristicRowDeleting" msprop:Generator_UserTableName="DefaultCharacteristic" msprop:Generator_RowChangingName="DefaultCharacteristicRowChanging" msprop:Generator_RowEvHandlerName="DefaultCharacteristicRowChangeEventHandler" msprop:Generator_RowDeletedName="DefaultCharacteristicRowDeleted" msprop:Generator_RowEvArgName="DefaultCharacteristicRowChangeEvent" msprop:Generator_RowChangedName="DefaultCharacteristicRowChanged" msprop:Generator_RowClassName="DefaultCharacteristicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" msprop:Generator_UserColumnName="Caption" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Category_Characteristic" msdata:parent="Category" msdata:child="Characteristic" msdata:parentkey="Code" msdata:childkey="CategoryCode" msprop:Generator_UserChildTable="Characteristic" msprop:Generator_ChildPropName="GetCharacteristicRows" msprop:Generator_ParentPropName="CategoryRow" msprop:Generator_UserRelationName="Category_Characteristic" msprop:Generator_RelationVarName="relationCategory_Characteristic" msprop:Generator_UserParentTable="Category" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
