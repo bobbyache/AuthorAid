@@ -1,0 +1,18 @@
+﻿<Window x:Class="IndexCards.AnotherIdea"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IndexCards"
+        mc:Ignorable="d"
+        Title="AnotherIdea" Height="300" Width="300">
+    <Grid>
+        <!--<Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lbx_Pages" AllowDrop="True" DragEnter="lbx_Pages_DragEnter" PreviewMouseLeftButtonDown="lbx_Pages_PreviewMouseLeftButtonDown" PreviewMouseMove="lbx_Pages_PreviewMouseMove" Drop="lbx_Pages_PagesDrop"/>-->
+    </Grid>
+</Window>
